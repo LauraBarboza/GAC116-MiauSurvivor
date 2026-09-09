@@ -15,9 +15,7 @@ Um jogo de sobrevivência em arena com arte pixelada original, feito exclusivame
 
 ## Versão publicada
 
-**GitHub Pages:** PREENCHER_APOS_PUBLICAR
-
-Substitua o texto acima pelo endereço real do jogo depois da publicação, por exemplo: `https://SEU-USUARIO.github.io/miau-survivor/`. Esse exemplo é apenas um modelo e não corresponde a uma publicação já realizada.
+**GitHub Pages:** 
 
 ## Objetivo e regras
 
