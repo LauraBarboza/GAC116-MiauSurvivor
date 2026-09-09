@@ -15,7 +15,7 @@ Um jogo de sobrevivência em arena com arte pixelada original, feito exclusivame
 
 ## Versão publicada
 
-**GitHub Pages:** 
+**GitHub Pages:** https://laurabarboza.github.io/GAC116-MiauSurvivor/
 
 ## Objetivo e regras
 
