@@ -52,15 +52,6 @@ Sobreviver pelo maior tempo possível e superar o recorde de pontos. A arena é 
 
 O gato começa com 1 de dano, raio de tiro de 5 unidades, intervalo de 0,52 segundo e velocidade de 170 unidades/s. A arena usa coordenadas internas, redimensionadas visualmente conforme a tela. Para preservar desempenho em partidas longas, há até 110 inimigos simultâneos, e cristais excedentes são agrupados sem perder seu valor de XP.
 
-## Como instalar e jogar
-
-1. Extraia **todo o ZIP** para uma pasta.
-2. Abra `index.html` no navegador.
-3. Clique em **Começar partida**.
-
-Não é necessário instalar pacotes, executar compilação ou usar um servidor. O jogo funciona offline. Mantenha `index.html`, `style.css` e `script.js` juntos. Use um navegador com Canvas 2D e JavaScript habilitado. Em celulares, o acesso pelo GitHub Pages é mais simples que abrir arquivos locais.
-
-O recorde fica no `localStorage` do navegador, quando permitido. Ele pode variar entre navegadores, arquivos locais e a versão publicada. Se o armazenamento estiver bloqueado, o jogo continua funcionando e mantém o recorde apenas durante a sessão. Nenhum dado é enviado a servidores.
 
 ## Tecnologias e organização
 
@@ -90,35 +81,6 @@ miau-survivor/
 - `syncHud` atualiza pontos, vidas, tempo e experiência no DOM.
 - `start` também é usado no reinício para evitar sobras da partida anterior.
 
-## Publicar no GitHub Pages
-
-1. Crie um repositório **público**, por exemplo `miau-survivor`.
-2. Envie os cinco arquivos desta pasta para a raiz do repositório. O `index.html` deve ficar na raiz, sem uma pasta extra envolvendo os arquivos.
-3. Nas configurações do repositório, abra **Pages** e selecione a publicação por branch (**Deploy from a branch**), branch `main` e pasta `/ (root)`.
-4. Salve e aguarde a conclusão da publicação. Abra o endereço fornecido pelo GitHub e teste o jogo.
-5. Substitua `PREENCHER_APOS_PUBLICAR` neste README pelo endereço real.
-6. Envie no Campus Virtual o **link do repositório**, conforme o enunciado.
-
-A publicação e o envio acadêmico não são realizados automaticamente pelo ZIP. Segundo o PDF, o prazo de entrega é **10/09/2026 às 12h**, e a apresentação ocorre em **10/09/2026**, no horário da aula.
-
-## Checklist de verificação
-
-- [ ] Abrir `index.html` após extrair o ZIP e iniciar com três vidas e zero pontos.
-- [ ] Mover com WASD e setas; verificar limites da arena e tiro automático.
-- [ ] Derrotar cachorros, coletar cristais e escolher uma melhoria.
-- [ ] Confirmar que o tempo fica parado durante pausa e escolha de melhoria.
-- [ ] Sofrer contato, observar proteção temporária e chegar à derrota após três danos.
-- [ ] Reiniciar e confirmar o reset completo da partida e a manutenção do recorde.
-- [ ] Testar os botões direcionais no celular.
-- [ ] Publicar, preencher o link acima e testar a versão do GitHub Pages.
-
-## Roteiro sugerido para a apresentação (até 3 minutos)
-
-- **0:00–0:30:** apresentar nome, objetivo e tecnologias utilizadas.
-- **0:30–1:15:** demonstrar movimento, tiro automático, vidas e inimigos.
-- **1:15–2:00:** mostrar coleta de XP, escolha de melhorias e pontuação.
-- **2:00–2:40:** demonstrar pausa, derrota e reinício.
-- **2:40–3:00:** mostrar a organização dos arquivos e o endereço publicado.
 
 ## Licença
 
