@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141d23">
+  <meta name="description" content="Miau Survivor: sobreviva à cachorrada nesta arena pixelada. Um jogo em HTML, CSS e JavaScript puro.">
+  <title>Miau Survivor • Laura Barboza</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="index.html" aria-label="Miau Survivor, início"><span class="brand-icon">M</span> MIAU<span class="muted">/</span>SURVIVOR</a><span class="badge">ARCADE · 8-BIT</span></header>
+  <main>
+    <div class="heading"><div><p class="eyebrow">UM GATO. TRÊS VIDAS. MUITOS CACHORROS.</p><h1>O quintal é seu.</h1></div><p class="intro">Desvie. Colete. Evolua.<br>Sobreviva à cachorrada.</p></div>
+    <section class="game-shell" aria-label="Jogo Miau Survivor">
+      <div class="hud"><div><span class="label">VIDAS</span><strong id="lives" aria-label="3 vidas">♥ ♥ ♥</strong></div><div><span class="label">PONTOS</span><strong id="score">00000</strong></div><div><span class="label">TEMPO</span><strong id="time">00:00</strong></div><div><span class="label">NÍVEL</span><strong id="level">01</strong></div><button id="pause" class="small-button" disabled aria-label="Pausar partida">Ⅱ Pausar</button></div>
+      <div class="xp-row"><span id="xp-label">XP 0 / 5</span><div class="xp-track" role="progressbar" aria-label="Experiência para o próximo nível" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" id="xp-bar"><div id="xp-fill"></div></div><span>PRÓXIMO NÍVEL ↗</span></div>
+      <div class="arena-wrap">
+        <canvas id="arena" width="960" height="540" tabindex="0" aria-label="Arena. Mova o gato com WASD ou setas; ele atira automaticamente. P ou Escape pausa.">Seu navegador precisa oferecer suporte a Canvas para executar o jogo.</canvas>
+        <section id="overlay" class="overlay" aria-labelledby="panel-title"><div class="panel" id="panel"></div></section>
+      </div>
+      <div class="game-bottom"><span><i class="status-dot"></i><span id="status" role="status" aria-live="polite">Pronto para jogar</span></span><span>RECORDE <b id="best">0</b></span></div>
+    </section>
+    <div class="touch-controls" aria-label="Controles de movimento para toque"><button data-move="ArrowLeft" aria-label="Mover à esquerda">←</button><button data-move="ArrowUp" aria-label="Mover para cima">↑</button><button data-move="ArrowDown" aria-label="Mover para baixo">↓</button><button data-move="ArrowRight" aria-label="Mover à direita">→</button></div>
+    <section class="guide" aria-label="Instruções"><article><span class="step">01 / MOVA-SE</span><h2>Patinhas em ação</h2><p>Use <kbd>W A S D</kbd> ou as <kbd>setas</kbd>. No celular, segure os botões abaixo da arena. O tiro é automático.</p></article><article><span class="step">02 / EVOLUA</span><h2>Colete os cristais</h2><p>Cachorros derrotados deixam XP. Aproxime-se para coletar e escolha uma melhoria a cada nível.</p></article><article><span class="step">03 / SOBREVIVA</span><h2>Cuide das três vidas</h2><p>O contato custa uma vida. A dificuldade cresce com o tempo. Pause com <kbd>P</kbd> ou <kbd>Esc</kbd>.</p></article></section>
+    <details><summary>Conheça os cachorros e as melhorias</summary><p><b>Vira-lata:</b> equilibrado. <b>Caramelo:</b> rápido, mas frágil. <b>Bulldog:</b> lento e resistente. Cada tipo tem cor e tamanho próprios.</p><p><b>Tiro gigante:</b> projétil maior. <b>Rajada:</b> menor intervalo entre tiros. <b>Garras afiadas:</b> mais dano. <b>Patas ligeiras:</b> mais velocidade. As escolhas aparecem em grupos de três; use o mouse, toque ou as teclas 1, 2 e 3.</p><p>São 10 pontos por XP gerado ao derrotar cachorros, mais 1 ponto por segundo sobrevivido. Depois de sofrer dano, o gato pisca e fica protegido por 1,8 segundo. O jogo termina ao perder as três vidas; tente superar seu recorde!</p></details>
+  </main>
+  <footer><span>FEITO COM PATINHAS & PIXELS</span><span>Laura Costa Sarto Barboza · Turma 14A · 2026</span></footer>
+</body>
+</html>
